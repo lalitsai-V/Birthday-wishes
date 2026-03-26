@@ -1,0 +1,270 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Handlee);
+
+body,
+html {
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
+.bg {
+  /* Location of the image */
+  background-image: url(./img/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #FEC0CD;
+  height: 100%;
+}
+
+
+.img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 20px;
+  margin-bottom: 30px;
+  width: 350px;
+}
+
+#tap {
+  display: inline-block;
+}
+
+.foto {
+  width: 80%;
+  max-width: 400px;
+  min-width: 300px;
+  margin-top: 100px;
+  /* margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px; */
+  display: inline-block;
+  /* vertical-align: middle;
+  line-height: normal; */
+}
+
+
+
+/* Paper */
+.paper {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  min-width: 300px;
+  height: 540px;
+  margin: 50px auto;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+  overflow: hidden;
+}
+
+.paper:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5px;
+  width: 45px;
+  background: radial-gradient(#616161 6px, transparent 7px) repeat-y;
+  background-size: 30px 30px;
+  border-right: 3px solid #D44147;
+  box-sizing: border-box;
+}
+
+.paper-content {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  bottom: 30px;
+  left: 50px;
+  background: linear-gradient(transparent, transparent 28px, #91D1D3 28px);
+  background-size: 30px 30px;
+}
+
+/* Center the final birthday message */
+#slideEnam {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+#slideEnam h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#slideEnam p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+#slideEnam i {
+  color: #FFD700;
+}
+
+/* Pop effect for the Happy Birthday image */
+@keyframes popEffect {
+  0% {
+    transform: translateY(-30px) scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(5px) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+#slideSatu.pop img {
+  animation: popEffect 0.8s ease-out;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25%, 75% {
+    transform: scale(1.05);
+  }
+  40%, 60% {
+    transform: scale(1.1);
+  }
+}
+
+#slideSatu img.heartbeat {
+  animation: heartbeat 1.2s ease-in-out 1;
+}
+
+.paper-content .teks {
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  line-height: 30px;
+  padding: 0 10px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #3f3f44;
+  font-family: 'Handlee', cursive;
+  font-size: 18px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.kotak {
+  position: relative;
+  width: 90%;
+  max-width: 550px;
+  min-width: 200px;
+  max-height: 350px;
+  min-height: 100px;
+  top: 300px;
+  padding: 20px 0;
+  display: inline-block;
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+  overflow: hidden;
+}
+
+.btn {
+  border-radius: 40px;
+}
+
+#slideLima {
+  position: relative;
+  top: 300px;
+}
+
+#trims {
+  position: relative;
+  top: 300px;
+  display: inline-block;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+li {
+  display: inline-block;
+  font-size: 16px;
+  list-style-type: none;
+  position: relative;
+  left: -20px;
+  margin-top: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 24px;
+}
+
+body {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container {
+  color: #333;
+  position: relative;
+  top: 250px;
+  padding: 0;
+  text-align: center;
+}
+
+.tap-button {
+  background: linear-gradient(45deg, #ff6b6b, #feca57);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.tap-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #feca57, #ff6b6b);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
