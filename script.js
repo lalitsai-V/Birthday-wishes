@@ -103,7 +103,7 @@ const _slideDua = function () {
         _slideTiga();
       }, 1000);
     });
-  }, 15000);
+  }, 1000);
 };
 
 const _slideTiga = function () {
@@ -181,7 +181,7 @@ const _slideLima = function () {
 
     // Show final birthday message
     _slideEnam();
-  }, 24000);  // Extended from 4000ms to 11000ms to match text completion
+  }, 13000);  // Extended from 4000ms to 11000ms to match text completion
 };
 
 const _slideEnam = function () {
